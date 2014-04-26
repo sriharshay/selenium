@@ -1,4 +1,4 @@
-package tutorial.basics.selenium.webdriver;
+package tutorial.basics.selenium.webdriver.tutorial.basics.selenium.drivers.suite;
 
 import java.util.HashMap;
 import java.util.List;
