@@ -3,9 +3,6 @@ package tutorial.basics.selenium.webdriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-/**
- * Created by Sriharsha on 26-04-2014.
- */
 public class ChromeWebDriver {
     private ChromeWebDriver(){
         /*Shouldn't be initialized*/

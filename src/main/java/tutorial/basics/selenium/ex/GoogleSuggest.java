@@ -8,9 +8,6 @@ import org.openqa.selenium.WebElement;
 
 import tutorial.basics.selenium.webdriver.ChromeWebDriver;
 
-/**
- * Created by Sriharsha on 26-04-2014.
- */
 public class GoogleSuggest
 {
     public static void main(String[] args) throws Exception

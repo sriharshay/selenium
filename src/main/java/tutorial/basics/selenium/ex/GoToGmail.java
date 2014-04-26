@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,9 +12,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import tutorial.basics.selenium.webdriver.ChromeWebDriver;
 
-/**
- * Created by Sriharsha on 26-04-2014.
- */
 public class GoToGmail
 {
     public static final String EMAIL    = "your_mail@gmail.com"; // your_mail@gmail.com
