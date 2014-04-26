@@ -1,4 +1,4 @@
-package tutorial.basics.selenium.webdriver.tutorial.basics.selenium.drivers;
+package tutorial.basics.selenium.webdriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +11,7 @@ public class ChromeWebDriver {
         /*Shouldn't be initialized*/
     }
     public static WebDriver getDriver(){
-        System.setProperty("webdriver.chrome.driver", "D:\\gs\\codebase\\SeleniumBasics\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\devtools\\chromedriver\\chromedriver.exe");
         return new ChromeDriver();
     }
 }

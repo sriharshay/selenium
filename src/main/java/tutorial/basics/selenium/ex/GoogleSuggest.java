@@ -1,11 +1,12 @@
-package tutorial.basics.selenium.webdriver.tutorial.basics.selenium.drivers.suite;
+package tutorial.basics.selenium.ex;
 
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import tutorial.basics.selenium.webdriver.tutorial.basics.selenium.drivers.ChromeWebDriver;
+
+import tutorial.basics.selenium.webdriver.ChromeWebDriver;
 
 /**
  * Created by Sriharsha on 26-04-2014.

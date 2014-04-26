@@ -1,4 +1,4 @@
-package tutorial.basics.selenium.webdriver.tutorial.basics.selenium.drivers;
+package tutorial.basics.selenium.webdriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
