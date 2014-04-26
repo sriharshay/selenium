@@ -19,7 +19,7 @@ public class MyFirstTest {
     public void startWebDriver(){
         WebDriver driver = null;
         //driver = new FirefoxDriver();
-        System.setProperty("webdriver.chrome.driver", "D:\\gs\\codebase\\SeleniumBasics\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\gs\\codebase\\SeleniumBasics\\chromedriver\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://www.google.com");
 

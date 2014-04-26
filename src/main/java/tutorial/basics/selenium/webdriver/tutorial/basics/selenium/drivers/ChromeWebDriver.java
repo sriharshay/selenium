@@ -11,7 +11,7 @@ public class ChromeWebDriver {
         /*Shouldn't be initialized*/
     }
     public static WebDriver getDriver(){
-        System.setProperty("webdriver.chrome.driver", "D:\\gs\\codebase\\SeleniumBasics\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\gs\\codebase\\SeleniumBasics\\chromedriver\\chromedriver.exe");
         return new ChromeDriver();
     }
 }
