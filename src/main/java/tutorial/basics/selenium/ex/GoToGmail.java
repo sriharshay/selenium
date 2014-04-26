@@ -18,8 +18,8 @@ import tutorial.basics.selenium.webdriver.ChromeWebDriver;
  */
 public class GoToGmail
 {
-    public static final String EMAIL    = "your_mail@gmail.com";
-    public static final String PASSWORD = "mail_pwd";
+    public static final String EMAIL    = "your_mail@gmail.com"; // your_mail@gmail.com
+    public static final String PASSWORD = "your_pwd"; // your_pwd
 
     public static void main(String[] args) throws Exception
     {
@@ -54,19 +54,13 @@ public class GoToGmail
                 System.out.println("Logged in as " + EMAIL);
                 WebElement messagesArea = driver.findElement(By.cssSelector("div.UI"));
                 //System.out.println("all text " + messagesArea.getText());
-                List<WebElement> spanList = messagesArea.findElements(By.tagName("span"));
-                int i = 0;
-                for (WebElement el : spanList)
+                List<WebElement> trList = messagesArea.findElements(By.tagName("tr"));
+                for (int i = 0; i < trList.size(); i++)
                 {
-                    if (StringUtils.isNotBlank(el.getAttribute("id")) && StringUtils.isBlank(el.getAttribute("title")) && StringUtils.isNotBlank(el.getText()))
-                    {
-                        System.out.println("Mail " + ++i + " " + el.getText());
-                    }
-                    else
-                    {
-                        //System.out.println("srong span "+el.getText());
-                    }
-
+                    WebElement senderSpan = trList.get(i).findElements(By.tagName("td")).get(4);
+                    WebElement msgTitleSpan = trList.get(i).findElements(By.tagName("td")).get(5);
+                    System.out.println("Mail-" + (i + 1) + " " + senderSpan.getText() + "(" + senderSpan.findElement(By.tagName("span")).getAttribute("email")
+                            + ") - " + msgTitleSpan.findElements(By.tagName("span")).get(0).getText());
                 }
                 closeBrowser(driver);
             }
